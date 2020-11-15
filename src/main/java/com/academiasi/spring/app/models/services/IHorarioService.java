@@ -11,7 +11,7 @@ public interface IHorarioService {
 	
 	public List<Horario> findAll();
 	
-	// Pageable de Spring Framework data domain obligatorio
+	//Pageable de Spring Framework data domain obligatorio
 	
 	public Page<Horario> findAll(Pageable pageable);
 	
