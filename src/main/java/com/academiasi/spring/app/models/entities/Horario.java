@@ -15,7 +15,7 @@ public class Horario implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long idh;
 
 	@NotEmpty
 	private String horainicio;
@@ -29,12 +29,14 @@ public class Horario implements Serializable {
 	@NotEmpty
 	private String instructor;
 
-	public Long getId() {
-		return id;
+	
+
+	public Long getIdh() {
+		return idh;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdh(Long idh) {
+		this.idh = idh;
 	}
 
 	public String getHorainicio() {

@@ -148,7 +148,7 @@ public class HorarioController {
 			return"form-horarios";
 		}
 		
-		String mensajeFlash = (horario.getId() != null)? "Horario Editado con Éxito" : "Horario Creado con Éxito";
+		String mensajeFlash = (horario.getIdh() != null)? "Horario Editado con Éxito" : "Horario Creado con Éxito";
 		
 		horarioService.save(horario);
 		status.setComplete();
@@ -160,11 +160,11 @@ public class HorarioController {
 	/* ELIMINAR HORARIO                   */
 	/* ---------------------------------- */
 	@Secured("ROLE_ADMIN")
-	@RequestMapping(value="/eliminar/{id}")
-	public String eliminar(@PathVariable(value="id") Long id, RedirectAttributes flash) {
+	@RequestMapping(value="/eliminar/{idh}")
+	public String eliminarHorario(@PathVariable(value="idh") Long idh, RedirectAttributes flash) {
 		
-		if(id>0) {
-			horarioService.delete(id);
+		if(idh>0) {
+			horarioService.delete(idh);
 			flash.addFlashAttribute("success", "Horario Eliminado con Éxito");
 		}
 		
@@ -183,7 +183,7 @@ public class HorarioController {
 		
 		if(auth == null) {
 			return false;
-		}
+		} 
 		
 		Collection<? extends GrantedAuthority> authorities = auth.getAuthorities();
 		

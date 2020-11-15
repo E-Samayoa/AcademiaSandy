@@ -43,9 +43,9 @@
 							<td th:text="${horario.curso}"></td>
 							<td th:text="${horario.instructor}"></td>
 							<td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-success btn-xs"
-								th:href="@{/form-horarios/} + ${horario.id}" th:text="'Editar'"></a></td>
+								th:href="@{/form-horarios/} + ${horario.idh}" th:text="'Editar'"></a></td>
 							<td sec:authorize="hasRole('ROLE_ADMIN')"><a class="btn btn-danger btn-xs"
-								th:href="@{/eliminar/} + ${horario.id}" th:text="'Eliminar'"
+								th:href="@{/eliminar/} + ${horario.idh}" th:text="'Eliminar'"
 								onclick="return confirm('¿Estás seguro que quieres eliminar el Horario?;')"></a></td>
 						</tr>
 					</tbody>
