@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Error 403</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+ 	<header th:replace="layout/layout :: header"></header>
+
+	<div class="container py-4">
+
+		<div class="card bg-danger text-white text-center">
+			<div class="card-header" style="font-size: 45px; font-family: Impact">¡Error: Acceso Denegado!</div>
+			<div class="card-body">
+				<h5 class="card-title" align="center" style="font-family: Century">
+					Lo Sentimos <span th:text="${#authentication.name}"></span>,
+					NO tienes permisos para Navegar en este sitio o Realizar esta acción...
+				</h5>
+				<a th:href="@{/}" class="btn btn-outline-light" role="button">Regresar
+					al Inicio</a>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

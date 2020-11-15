@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Eventos</title>
+
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image:
+		url(https://userscontent2.emaze.com/images/7ba4244a-7fe6-4aa0-8c3b-0572f0bc787c/002d7e638fb463fb7a266f5ffc7ac47d.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+</style>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+	<header th:replace="layout/layout :: header"></header>
+
+	<div class="py-3">
+		<h1 align="center">
+			<span class="badge badge-dark"><font size="70">
+					"COMPUTACION SANDY"</font></span>
+		</h1>
+
+	</div>
+
+	<div class=" text-center py-3">
+		<img th:src="@{/images/publi1.jpg}" alt="Login" width="500" />
+	</div>
+
+	<div class=" text-center py-3">
+		<img th:src="@{/images/publi2.jpg}" alt="Login" width="500" />
+	</div>
+
+	<div class=" text-center py-3">
+		<img th:src="@{/images/publi3.jpg}" alt="Login" width="500" />
+	</div>
+
+	<div class=" text-center py-3">
+		<img th:src="@{/images/publi4.jpg}" alt="Login" width="500" />
+	</div>
+
+	<div class=" text-center py-3">
+		<img th:src="@{/images/publi5.jpg}" alt="Login" width="500" />
+	</div>
+
+
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>

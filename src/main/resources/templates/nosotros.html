@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Nosotros</title>
+
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image:
+		url(https://userscontent2.emaze.com/images/7ba4244a-7fe6-4aa0-8c3b-0572f0bc787c/002d7e638fb463fb7a266f5ffc7ac47d.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+</style>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<!--  BODY CON THYMELEAF -->
+<body>
+
+	<header th:replace="layout/layout :: header"></header>
+
+
+
+	<h1 align="center">
+		<span class="badge badge-dark">Centro de Aprendizaje de
+			Teconologias de la Informacion y la Comunicacion</span>
+	</h1>
+
+	<h1 align="center">
+		<span class="badge badge-success"><font size="70">"COMPUTACION SANDY"</font></span>
+	</h1>
+	<!--  CUADROS -->
+	<div class="card-deck">
+		<div class="card"
+			style="width: 50rem; filter: alpha(opacity = 100); opacity: .8;">
+			<div class="card-body">
+				<h5 align="center" class="card-title">
+					<font face="impact" size="60">VISIÓN</font>
+				</h5>
+				<p align="justify" class="card-text" style="line-height: 200%">
+					<font face="times new roman" size="5">Ser un centro líder en
+						cursos básico y libre de aprendizaje de tecnologías de la
+						información y la comunicación, sin fines de lucro, proporcionando
+						una sólida formación técnica, científica y humanística, base para
+						la realización personal y el desempeño en el estudio y en el
+						trabajo para el desarrollo de los pueblos.</font>
+				</p>
+
+			</div>
+		</div>
+
+		<div class="card" style="filter: alpha(opacity = 100); opacity: .8;">
+			<div class="card-body">
+				<h5 align="center" class="card-title">
+					<font face="impact" size="50">MISION</font>
+				</h5>
+				<p align="justify" class="card-text" style="line-height: 200%">
+					<font face="times new roman" size="5">Somos un Centro de
+						Aprendizaje de Tecnologías de la Información y la Comunicación,
+						reconocidos por la formación de niños, jóvenes y adultos,
+						competentes y habilidosos en la Computación, infundiendo el
+						respeto y la práctica de los derechos humanos, la solidaridad, el
+						uso responsable de la libertad y el cumplimiento de las
+						obligaciones, superando los intereses individuales en la búsqueda
+						del bien común.</font>
+				</p>
+
+			</div>
+		</div>
+
+		<div class="card" style="filter: alpha(opacity = 100); opacity: .8;">
+			<div class="card-body">
+
+				<h5 align="center" class="card-title">
+					<font face="impact" size="50">DESCRIPCIÓN</font>
+				</h5>
+				<p align="justify" class="card-text" style="line-height: 200%">
+					<font face="times new roman" size="5">Según registros
+						administrativos, fue aperturado el centro con una inscripción de
+						10 hombres y 12 mujeres para un total de 22 inscritos cultivando
+						en ellos los valores tales como: la participación ciudadana, bien
+						común, respeto, honestidad y capacidad en el manejo de las
+						herramientas de información y comunicación tecnológicas. El año
+						2014 entra en vigencia la resolución No. 1024-2013 que resuelve
+						autorizar el cambio de nombre del Centro de Aprendizaje de
+						Tecnologías de la Información y la Comunicación “Computacion Sandy”.
+						 Asimismo, legalizar el nombre del propietario a
+						nombre de Leonardo Alvarado.</font>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN CUADROS -->
+
+
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>

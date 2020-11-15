@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Index</title>
+
+<style type="text/css">
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(https://userscontent2.emaze.com/images/7ba4244a-7fe6-4aa0-8c3b-0572f0bc787c/002d7e638fb463fb7a266f5ffc7ac47d.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+</style>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+	<header th:replace="layout/layout :: header"></header>
+
+<div class="py-3">
+	<h1 align="center">
+		<span class="badge badge-primary"><font size="75px">¡Bienvenido a Academia Sandy!</font></span>
+	</h1>
+	</div>
+
+	<h1 align="center">
+		<span class="badge badge-secondary"><font size="65px">Menú de Opciones:</font></span>
+	</h1>
+
+	<div class="card-deck border-primary" align="center">
+		<div class="card-body">
+
+			<div class="form-group col-sm-4 ">
+
+				<div class="form-group col-sm-5" style="text-align: center">
+					<a href="/alumnos" class="btn btn-primary btn-lg"
+						style="font-family: Helvetica;">ALUMNOS</a>
+				</div>
+
+				<div class="form-group col-sm-5" style="text-align: center">
+					<a href="/horarios" class="btn btn-primary btn-lg"
+						style="font-family: Helvetica;">HORARIOS</a>
+				</div>
+
+				<div class="form-group col-sm-5" style="text-align: center">
+					<a href="/nosotros" class="btn btn-primary btn-lg"
+						style="font-family: Helvetica;">NOSOTROS</a>
+				</div>
+
+				<div class="form-group col-sm-5" style="text-align: center">
+					<a href="/login" class="btn btn-primary btn-lg"
+						style="font-family: Helvetica;">LOGIN</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class=" text-center py-3">
+		<img th:src="@{/images/portada.jpg}" alt="Login" width="1000" />
+	</div>
+
+
+
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+</html>
